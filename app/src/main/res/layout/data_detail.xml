@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataDetails">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#FFA384"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/titlename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/fullappname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/titlename"
+                android:text="Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/desctitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullappname"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/appdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desctitle"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="Description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/programmingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appdescription"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Language"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/programmingLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/programmingTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Language"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/totalFavoritesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/programmingLanguage"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Total Favorites"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/totalFavorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalFavoritesTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Total Favorites"
+                android:textColor="#000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/forksTotalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalFavorites"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Forks"
+                android:textColor="#000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+            <TextView
+                android:id="@+id/forksTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forksTotalTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Forks"
+                android:textColor="#000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+            <TextView
+                android:id="@+id/totalScoreTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forksTotal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Scores"
+                android:textColor="#000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/totalScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalScoreTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Scores"
+                android:textColor="#000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:foregroundGravity="bottom|right"
+                android:layout_below="@id/totalScore"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
